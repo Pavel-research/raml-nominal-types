@@ -1,0 +1,25 @@
+{
+  "name": "raml-nominal-types",
+  "version": "0.0.9",
+  "private": false,
+  "scripts": {
+    "compile": "rimraf -rf dist/ && ./node_modules/typescript/bin/tsc"
+  },
+  "main": "./dist/nominal-types.js",
+  "typings": "./dist/nominal-types.d.ts",
+  "devDependencies": {
+
+    "typescript": "^2.0.0",
+    "dev-env-installer": "0.0.5",
+    "rimraf": "*"
+
+  },
+  "directories": [
+    "dist"
+  ],
+  "dependencies": {
+    "underscore": "^1.8.3",
+    "raml-typesystem-interfaces":"^0.0.9",
+    "@types/node": "^6.0.55"
+  }
+}
